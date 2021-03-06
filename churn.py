@@ -64,7 +64,7 @@ predicted = reg.predict(X_test)
 metrics.classification_report(expected, predicted)
 metrics.confusion_matrix(expected, predicted)
 
-import pickle
+import _pickle as pickle
 
 pickle.dump(model_GYM, open("reg.pkl", "wb"))
 
